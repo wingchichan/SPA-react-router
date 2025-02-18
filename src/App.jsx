@@ -12,6 +12,8 @@ export default function App() {
         <Route path={"/about"} element={<h2>About Me</h2>} />
         {/* route for an individual user when user queries a specific username */}
         <Route path={"/users/:username"} element={<UserPage />} />
+        <Route path="posts" element={<UserPostsPage />} />
+        <Route path="likes" element={<UserLikesPage />} />
       </Routes>
     </section>
   );
